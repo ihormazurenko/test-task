@@ -19,12 +19,11 @@ jQuery(document).ready(function($) {
                 scrollBox = $('.table').find('.tbody');
 
             scrollBox.each(function () {
-                if ($(this).children('table').outerHeight() > 910) {
+                if ($(this).children('table').outerHeight() > 920) {
                     $(this).closest('.table').addClass('scroll');
                 } else {
                     $(this).removeClass('scroll');
                 }
-                console.log($(this).children('table').outerHeight() > 920);
             });
 
 
