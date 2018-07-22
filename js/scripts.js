@@ -29,7 +29,7 @@ jQuery(document).ready(function($) {
 
             if (windowW > 767) {
                 $('.table.scroll').find('.tbody').niceScroll({
-                    cursorcolor: "#ECEFF4",
+                    cursorcolor: "#DAE1EA",
                     cursoropacitymin: 1,
                     cursorwidth: "22px",
                     cursorborder: "20px solid transparent",

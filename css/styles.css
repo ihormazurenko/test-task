@@ -485,6 +485,19 @@ a.btn {
     width: 62px !important;
     border-left: 2px solid #E1E1E1;
 }
+#custom-scroll:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 20px;
+    background: #F4F4F4;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
 #custom-scroll .nicescroll-cursors {
     width: 60px !important;
     max-height: 140px;
@@ -492,9 +505,6 @@ a.btn {
     -moz-transition: background-color 0.25s;
     -o-transition: background-color 0.25s;
     transition: background-color 0.25s;
-}
-#custom-scroll .nicescroll-cursors:hover {
-    background-color: #E1E1E1 !important;
 }
 
 /*----------------------------------------------------------------------------------*/
