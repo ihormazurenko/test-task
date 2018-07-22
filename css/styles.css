@@ -173,10 +173,10 @@ img {
     color: #4E5C6E;
     font-size: 30px;
     line-height: 16px;
-    -webkit-transition: 0.25s;
-    -moz-transition: 0.25s;
-    -o-transition: 0.25s;
-    transition: 0.25s;
+    -webkit-transition: color 0.25s;
+    -moz-transition: color 0.25s;
+    -o-transition: color 0.25s;
+    transition: color 0.25s;
 }
 .sort-arrows:hover .fa,
 .sort-arrows:hover .fas {
