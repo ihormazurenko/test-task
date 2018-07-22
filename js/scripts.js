@@ -12,6 +12,41 @@ jQuery(document).ready(function($) {
     });
 
 
+    // for NiceScroll
+    if (typeof $.nicescroll !== 'undefined') {
+        $(window).on('load resize', function () {
+            var windowW = $(window).width(),
+                scrollBox = $('.table').find('.tbody');
+
+            scrollBox.each(function () {
+                if ($(this).children('table').outerHeight() > 910) {
+                    $(this).closest('.table').addClass('scroll');
+                } else {
+                    $(this).removeClass('scroll');
+                }
+                console.log($(this).children('table').outerHeight() > 920);
+            });
+
+
+            if (windowW > 767) {
+                $('.table.scroll').find('.tbody').niceScroll({
+                    cursorcolor: "#ECEFF4",
+                    cursoropacitymin: 1,
+                    cursorwidth: "22px",
+                    cursorborder: "20px solid transparent",
+                    cursorborderradius: "40px",
+                    background: "#ffffff",
+                    cursorminheight: 100,
+                    cursorfixedheight: 140,
+                    scrollbarid: "custom-scroll"
+                });
+            } else {
+                scrollBox.getNiceScroll().remove();
+            }
+        });
+    }
+
+
     // for Tabs
     var tabs = $('#tabs');
 

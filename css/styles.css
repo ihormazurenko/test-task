@@ -262,6 +262,25 @@ img {
     max-height: 920px;
     overflow-y: auto;
 }
+.table-box .table.scroll .tbody {
+    padding-right: 60px;
+}
+.table-box .table.scroll .thead {
+    padding-right: 20px;
+}
+.table.scroll table .broker {
+    width: 27%;
+}
+.table-box .table.scroll .thead .th {
+    padding-left: 0;
+    padding-right: 5px;
+}
+.table-box .table.scroll .thead .th:first-child {
+    padding-left: 10px;
+}
+.table-box .table.scroll .thead .th:last-child {
+    padding-right: 0;
+}
 
 .table table {
     width: 100%;
@@ -462,6 +481,22 @@ a.btn {
     opacity: 0.8;
 }
 
+#custom-scroll {
+    width: 62px !important;
+    border-left: 2px solid #E1E1E1;
+}
+#custom-scroll .nicescroll-cursors {
+    width: 60px !important;
+    max-height: 140px;
+    -webkit-transition: background-color 0.25s;
+    -moz-transition: background-color 0.25s;
+    -o-transition: background-color 0.25s;
+    transition: background-color 0.25s;
+}
+#custom-scroll .nicescroll-cursors:hover {
+    background-color: #E1E1E1 !important;
+}
+
 /*----------------------------------------------------------------------------------*/
 /*-----------------------------------RESPONSIVE-------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -515,6 +550,22 @@ a.btn {
     }
     .orders-bottom {
         min-height: auto;
+    }
+    .table-box .tbody {
+        max-height: 80vh;
+    }
+    .table-box .table.scroll .tbody {
+        padding-right: 0;
+    }
+    .table-box .table.scroll .thead {
+        padding-right: 10px;
+    }
+    .table.scroll table .broker {
+        width: 33.33%;
+    }
+    .table-box .table.scroll .thead .th {
+        padding-left: 10px;
+        padding-right: 0;
     }
 }
 @media all and (max-width: 480px) {
